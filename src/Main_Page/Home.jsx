@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, ChevronRight, Send, Github, Linkedin, Twitter, ExternalLink, Sun, Moon } from 'lucide-react';
+import HeroSection from '../Sections/HeroSection';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -224,55 +225,8 @@ export default function Home() {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section 
-          id="home" 
-          className={`pt-28 pb-16 px-4 md:pt-32 md:pb-24 ${darkMode ? 'bg-gray-900' : 'bg-gray-50'}`}
-        >
-          <div className="container mx-auto max-w-6xl">
-            <div className="flex flex-col md:flex-row md:items-center">
-              <div className="md:w-1/2 mb-8 md:mb-0">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-                  <span className={darkMode ? 'text-white' : 'text-gray-900'}>Hi, I'm </span>
-                  <span className="text-blue-600">John Doe</span>
-                </h1>
-                <h2 className="text-2xl md:text-3xl font-semibold mb-6">
-                  <span className={`${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                    Freelance Web Developer
-                  </span>
-                </h2>
-                <p className={`text-lg mb-8 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                  I craft beautiful, functional websites and applications that help businesses grow and succeed online.
-                </p>
-                <div className="flex space-x-4">
-                  <button 
-                    onClick={() => scrollToSection('portfolio')}
-                    className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
-                  >
-                    View My Work
-                  </button>
-                  <button 
-                    onClick={() => scrollToSection('contact')}
-                    className={`px-6 py-3 font-medium rounded-lg border ${
-                      darkMode ? 'border-gray-700 text-gray-300 hover:bg-gray-800' : 'border-gray-300 text-gray-700 hover:bg-gray-100'
-                    } transition-colors`}
-                  >
-                    Contact Me
-                  </button>
-                </div>
-              </div>
-              <div className="md:w-1/2 flex justify-center">
-                <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-blue-600">
-                  <img 
-                    src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHByb2Zlc3Npb25hbCUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D" 
-                    alt="Developer Profile" 
-                    className="object-cover w-full h-full"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
+        
+        <HeroSection darkMode={darkMode} scrollToSection={scrollToSection} />
         {/* About Section */}
         <section 
           id="about" 
