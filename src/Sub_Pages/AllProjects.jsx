@@ -169,50 +169,50 @@ function AllProjects({ darkMode, navigateBack }) {
   return (
     <div className={`min-h-screen ${darkMode ? 'bg-gray-900' : 'bg-gray-50'} transition-colors duration-500`}>
       {/* Header with back button */}
-      <header className={`sticky top-0 z-10 py-4 px-6 ${darkMode ? 'bg-gray-900 shadow-gray-800/50' : 'bg-white'} shadow-md transition-colors duration-500`}>
-        <div className="container mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-4">
+      <header className={`sticky top-0 z-10 py-3 sm:py-4 px-4 sm:px-6 ${darkMode ? 'bg-gray-900 shadow-gray-800/50' : 'bg-white'} shadow-md transition-colors duration-500`}>
+        <div className="container mx-auto max-w-6xl flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
+          <div className="flex items-center gap-3 sm:gap-4 sm:justify-between">
             <Link to='/' >
             <button
               onClick={navigateBack}
-              className={`p-2 rounded-full transition-colors duration-300 ${
+              className={`p-1.5 sm:p-2 rounded-full transition-colors duration-300 ${
                 darkMode ? 'hover:bg-gray-800 text-gray-300' : 'hover:bg-gray-100 text-gray-700'
               }`}
             >
-              <ArrowLeft size={20} />
+              <ArrowLeft size={18} className="sm:w-5 sm:h-5" />
             </button>
             </Link>
-            <h1 className={`text-2xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+            <h1 className={`text-lg sm:text-2xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>
               All Projects
             </h1>
           </div>
           
-          <div className="flex items-center gap-3 w-full md:w-auto">
-            <div className={`relative flex-grow md:w-64 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+          <div className="flex items-center gap-2 sm:gap-3 w-full sm:w-auto">
+            <div className={`relative flex-grow sm:w-64 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
               <input
                 type="text"
                 placeholder="Search projects..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className={`w-full pl-10 pr-4 py-2 rounded-lg ${
+                className={`w-full pl-8 sm:pl-10 pr-3 sm:pr-4 py-1.5 sm:py-2 text-sm sm:text-base rounded-lg ${
                   darkMode 
                     ? 'bg-gray-800 border-gray-700 text-gray-200 placeholder-gray-500' 
                     : 'bg-gray-100 border-gray-200 text-gray-700 placeholder-gray-400'
                 } border focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300`}
               />
-              <Search size={18} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+              <Search size={16} className="absolute left-2.5 sm:left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4 sm:w-[18px] sm:h-[18px]" />
             </div>
             
             <button 
               onClick={() => setShowFilters(!showFilters)}
-              className={`p-2 rounded-lg border transition-colors duration-300 flex items-center gap-2 ${
+              className={`p-1.5 sm:p-2 rounded-lg border transition-colors duration-300 flex items-center gap-1 sm:gap-2 ${
                 darkMode 
                   ? 'bg-gray-800 border-gray-700 text-gray-300 hover:bg-gray-700' 
                   : 'bg-gray-100 border-gray-200 text-gray-700 hover:bg-gray-200'
               }`}
             >
-              <Filter size={18} />
-              <span className="hidden md:inline">Filter</span>
+              <Filter size={16} className="w-4 h-4 sm:w-[18px] sm:h-[18px]" />
+              <span className="hidden md:inline text-sm sm:text-base">Filter</span>
             </button>
           </div>
         </div>
@@ -220,15 +220,15 @@ function AllProjects({ darkMode, navigateBack }) {
       
       {/* Filters */}
       <div className={`${
-        showFilters ? 'max-h-24 py-4 opacity-100 border-b' : 'max-h-0 py-0 opacity-0 border-b-0'
+        showFilters ? 'max-h-20 sm:max-h-24 py-3 sm:py-4 opacity-100 border-b' : 'max-h-0 py-0 opacity-0 border-b-0'
       } ${darkMode ? 'bg-gray-900 border-gray-800' : 'bg-white border-gray-200'} overflow-hidden transition-all duration-300`}>
-        <div className="container mx-auto max-w-6xl px-6 overflow-x-auto">
-          <div className="flex gap-2 pb-1">
+        <div className="container mx-auto max-w-6xl px-4 sm:px-6 overflow-x-auto">
+          <div className="flex gap-1.5 sm:gap-2 pb-1">
             {categories.map((category) => (
               <button
                 key={category.value}
                 onClick={() => setActiveFilter(category.value)}
-                className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-300 ${
+                className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap transition-all duration-300 ${
                   activeFilter === category.value 
                     ? 'bg-blue-600 text-white shadow-md' 
                     : `${darkMode ? 'text-gray-300 hover:bg-gray-800' : 'text-gray-700 hover:bg-gray-100'}`
@@ -242,13 +242,13 @@ function AllProjects({ darkMode, navigateBack }) {
       </div>
       
       {/* Projects Grid */}
-      <main className="container mx-auto max-w-6xl px-4 py-8">
+      <main className="container mx-auto max-w-6xl px-3 sm:px-4 py-6 sm:py-8">
         {/* Results count */}
-        <div className={`mb-6 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+        <div className={`mb-4 sm:mb-6 text-xs sm:text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
           Showing {filteredProjects.length} {filteredProjects.length === 1 ? 'project' : 'projects'}
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {filteredProjects.map((project, index) => (
             <div 
               key={project.id} 
@@ -257,30 +257,30 @@ function AllProjects({ darkMode, navigateBack }) {
               } ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <div className="relative overflow-hidden h-48">
+              <div className="relative overflow-hidden h-40 sm:h-48">
                 <img 
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute top-3 right-3 bg-blue-600 text-white text-xs px-2 py-1 rounded-full">
+                <div className="absolute top-2 sm:top-3 right-2 sm:right-3 bg-blue-600 text-white text-[10px] sm:text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full">
                   {project.type}
                 </div>
               </div>
               
-              <div className="p-4">
-                <h3 className={`font-bold text-lg mb-1 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+              <div className="p-3 sm:p-4">
+                <h3 className={`font-bold text-base sm:text-lg mb-0.5 sm:mb-1 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
                   {project.title}
                 </h3>
-                <p className={`text-sm mb-3 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                <p className={`text-xs sm:text-sm mb-2 sm:mb-3 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
                   {project.category} • {project.completed}
                 </p>
                 
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
                   {project.technologies.slice(0, 3).map((tech, i) => (
                     <span 
                       key={i} 
-                      className={`text-xs px-2 py-1 rounded-full ${
+                      className={`text-[10px] sm:text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full ${
                         darkMode ? 'bg-gray-700 text-gray-300' : 'bg-gray-100 text-gray-700'
                       }`}
                     >
@@ -289,7 +289,7 @@ function AllProjects({ darkMode, navigateBack }) {
                   ))}
                   {project.technologies.length > 3 && (
                     <span 
-                      className={`text-xs px-2 py-1 rounded-full ${
+                      className={`text-[10px] sm:text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full ${
                         darkMode ? 'bg-gray-700 text-gray-300' : 'bg-gray-100 text-gray-700'
                       }`}
                     >
@@ -298,29 +298,29 @@ function AllProjects({ darkMode, navigateBack }) {
                   )}
                 </div>
                 
-                <p className={`text-sm h-16 overflow-hidden mb-4 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                <p className={`text-xs sm:text-sm h-12 sm:h-16 overflow-hidden mb-3 sm:mb-4 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
                   {project.description.substring(0, 100)}...
                 </p>
                 
-                <div className="flex gap-2">
+                <div className="flex gap-1.5 sm:gap-2">
                   <a 
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+                    className="flex-1 flex items-center justify-center gap-1 sm:gap-2 bg-blue-600 hover:bg-blue-700 text-white py-1.5 sm:py-2 rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-md text-xs sm:text-sm"
                   >
-                    <Eye size={16} />
+                    <Eye size={14} className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                     <span>View Site</span>
                   </a>
                   <button 
                     onClick={() => downloadScreenshot(project)}
-                    className={`flex items-center justify-center gap-2 px-4 py-2 rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-md ${
+                    className={`flex items-center justify-center gap-1 sm:gap-2 px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-md text-xs sm:text-sm ${
                       darkMode 
                         ? 'bg-gray-700 hover:bg-gray-600 text-white' 
                         : 'bg-gray-100 hover:bg-gray-200 text-gray-700'
                     }`}
                   >
-                    <Download size={16} />
+                    <Download size={14} className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                     <span className="sr-only md:not-sr-only">Screenshot</span>
                   </button>
                 </div>
@@ -331,9 +331,9 @@ function AllProjects({ darkMode, navigateBack }) {
         
         {/* Empty state */}
         {filteredProjects.length === 0 && (
-          <div className={`text-center py-12 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-            <p className="text-lg mb-2">No projects found matching your criteria</p>
-            <p>Try adjusting your search or filters</p>
+          <div className={`text-center py-8 sm:py-12 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+            <p className="text-base sm:text-lg mb-1 sm:mb-2">No projects found matching your criteria</p>
+            <p className="text-sm sm:text-base">Try adjusting your search or filters</p>
           </div>
         )}
       </main>
