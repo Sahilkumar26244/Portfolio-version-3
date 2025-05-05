@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Eye, Download, ArrowLeft, Search, Filter } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 function AllProjects({ darkMode, navigateBack }) {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -16,7 +17,7 @@ function AllProjects({ darkMode, navigateBack }) {
       type: "ecommerce",
       description: "A fully responsive e-commerce platform with product filtering, cart functionality, and secure checkout. Built with React, Redux, and integrated with Stripe payment processing.",
       technologies: ["React", "Redux", "Node.js", "MongoDB", "Stripe"],
-      image: "/api/placeholder/600/400",
+      image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGZhc2hpb258ZW58MHx8MHx8fDA%3D",
       url: "https://example.com/fashion-store",
       completed: "January 2025",
       client: "StyleHub Inc."
@@ -28,7 +29,7 @@ function AllProjects({ darkMode, navigateBack }) {
       type: "static",
       description: "Clean and professional static website for a financial services company with optimized performance. Features custom animations, contact forms, and responsive design.",
       technologies: ["HTML5", "CSS3", "JavaScript", "GSAP", "Netlify"],
-      image: "/api/placeholder/600/400",
+      image: "https://images.unsplash.com/photo-1584824486509-112e4181ff6b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGxhbmRpbmclMjBwYWdlfGVufDB8fDB8fHww",
       url: "https://example.com/corporate",
       completed: "November 2024",
       client: "FinServe Group"
@@ -40,7 +41,7 @@ function AllProjects({ darkMode, navigateBack }) {
       type: "interactive",
       description: "Engaging single-page application featuring interactive elements and animated transitions. Includes email subscription, social sharing, and responsive design.",
       technologies: ["React", "Three.js", "GSAP", "Tailwind CSS"],
-      image: "/api/placeholder/600/400",
+      image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
       url: "https://example.com/product-launch",
       completed: "December 2024",
       client: "TechLaunch LLC"
@@ -52,7 +53,7 @@ function AllProjects({ darkMode, navigateBack }) {
       type: "dashboard",
       description: "Dynamic dashboard built with React featuring real-time data visualization and user authentication. Includes dark/light mode and customizable widgets.",
       technologies: ["React", "D3.js", "Firebase", "Material UI"],
-      image: "/api/placeholder/600/400",
+      image: "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBvcnRmb2xpb3xlbnwwfHwwfHx8MA%3D%3D",
       url: "https://example.com/dashboard",
       completed: "October 2024",
       client: "DataViz Solutions"
@@ -64,7 +65,7 @@ function AllProjects({ darkMode, navigateBack }) {
       type: "application",
       description: "Feature-rich web application with search functionality, user accounts, and responsive design. Includes recipe saving, rating system, and social sharing.",
       technologies: ["Vue.js", "Vuex", "Node.js", "Express", "MongoDB"],
-      image: "/api/placeholder/600/400",
+      image: "https://images.unsplash.com/photo-1514986888952-8cd320577b68?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGZvb2QlMjBraXRjaGVufGVufDB8fDB8fHww",
       url: "https://example.com/recipe-finder",
       completed: "September 2024",
       client: "FoodTech Inc."
@@ -76,7 +77,7 @@ function AllProjects({ darkMode, navigateBack }) {
       type: "blog",
       description: "Content-focused blog with custom CMS integration, comment system, and SEO optimization. Features lazy loading images and responsive design.",
       technologies: ["Next.js", "Sanity CMS", "Vercel", "Tailwind CSS"],
-      image: "/api/placeholder/600/400",
+      image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dHJhdmVsfGVufDB8fDB8fHww",
       url: "https://example.com/travel-blog",
       completed: "August 2024",
       client: "Wanderlust Media"
@@ -88,7 +89,7 @@ function AllProjects({ darkMode, navigateBack }) {
       type: "ecommerce",
       description: "Property listing website with advanced search filters, interactive maps, and inquiry forms. Features virtual tours and responsive design.",
       technologies: ["React", "Next.js", "Google Maps API", "Node.js", "PostgreSQL"],
-      image: "/api/placeholder/600/400",
+      image: "https://images.unsplash.com/photo-1592595896551-12b371d546d5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJlYWwlMjBlc3RhdGV8ZW58MHx8MHx8fDA%3D",
       url: "https://example.com/real-estate",
       completed: "March 2025",
       client: "HomeQuest Properties"
@@ -100,7 +101,7 @@ function AllProjects({ darkMode, navigateBack }) {
       type: "application",
       description: "Educational platform with course enrollment, progress tracking, and certificate generation. Features video streaming and interactive quizzes.",
       technologies: ["React", "Node.js", "Express", "MongoDB", "AWS S3"],
-      image: "/api/placeholder/600/400",
+      image: "https://images.unsplash.com/photo-1588912914078-2fe5224fd8b8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGVhcm5pbmclMjBwbGF0Zm9ybXxlbnwwfHwwfHx8MA%3D%3D",
       url: "https://example.com/learning",
       completed: "February 2025",
       client: "EduTech Solutions"
@@ -112,7 +113,7 @@ function AllProjects({ darkMode, navigateBack }) {
       type: "static",
       description: "Informational website for a non-profit organization with donation integration, event calendar, and volunteer signup. Features accessibility optimization.",
       technologies: ["WordPress", "PHP", "MySQL", "Stripe", "GSAP"],
-      image: "/api/placeholder/600/400",
+      image: "https://plus.unsplash.com/premium_photo-1661962927450-d5f7c9267ca2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2hhcml0eSUyMG9yZ2FuaXNhdGlvbnxlbnwwfHwwfHx8MA%3D%3D",
       url: "https://example.com/charity",
       completed: "April 2025",
       client: "Global Helpers Foundation"
@@ -171,7 +172,8 @@ function AllProjects({ darkMode, navigateBack }) {
       <header className={`sticky top-0 z-10 py-4 px-6 ${darkMode ? 'bg-gray-900 shadow-gray-800/50' : 'bg-white'} shadow-md transition-colors duration-500`}>
         <div className="container mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-4">
-            <button 
+            <Link to='/' >
+            <button
               onClick={navigateBack}
               className={`p-2 rounded-full transition-colors duration-300 ${
                 darkMode ? 'hover:bg-gray-800 text-gray-300' : 'hover:bg-gray-100 text-gray-700'
@@ -179,6 +181,7 @@ function AllProjects({ darkMode, navigateBack }) {
             >
               <ArrowLeft size={20} />
             </button>
+            </Link>
             <h1 className={`text-2xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>
               All Projects
             </h1>
