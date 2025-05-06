@@ -5,20 +5,20 @@ function ContactSection({ darkMode }) {
     <div>
       <section
         id="contact"
-        className={`py-16 px-4 ${darkMode ? "bg-gray-800" : "bg-white"}`}
+        className={`py-8 sm:py-12 md:py-16 px-3 sm:px-4 ${darkMode ? "bg-gray-800" : "bg-white"}`}
       >
         <div className="container mx-auto max-w-6xl">
-          <div className="mb-12 text-center">
+          <div className="mb-8 sm:mb-12 text-center">
             <h2
-              className={`text-3xl font-bold mb-4 ${
+              className={`text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 ${
                 darkMode ? "text-white" : "text-gray-900"
               }`}
             >
               Get In Touch
             </h2>
-            <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+            <div className="w-16 sm:w-20 h-1 bg-blue-600 mx-auto mb-4 sm:mb-6"></div>
             <p
-              className={`max-w-2xl mx-auto ${
+              className={`text-sm sm:text-base max-w-2xl mx-auto ${
                 darkMode ? "text-gray-400" : "text-gray-600"
               }`}
             >
@@ -27,33 +27,33 @@ function ContactSection({ darkMode }) {
             </p>
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-8">
+          <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-8">
             {/* Contact Information */}
             <div className="lg:w-2/5">
               <div
-                className={`p-6 rounded-lg ${
+                className={`p-4 sm:p-6 rounded-lg ${
                   darkMode ? "bg-gray-900" : "bg-gray-50"
                 }`}
               >
                 <h3
-                  className={`text-2xl font-semibold mb-6 ${
+                  className={`text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 ${
                     darkMode ? "text-white" : "text-gray-900"
                   }`}
                 >
                   Contact Information
                 </h3>
 
-                <div className="space-y-6">
+                <div className="space-y-4 sm:space-y-6">
                   {/* Contact Items */}
                   <div className="flex items-start">
                     <div
-                      className={`p-3 rounded-full mr-4 ${
+                      className={`p-2 sm:p-3 rounded-full mr-3 sm:mr-4 ${
                         darkMode ? "bg-gray-800" : "bg-blue-100"
                       }`}
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-blue-600"
+                        className="h-5 w-5 sm:h-6 sm:w-6 text-blue-600"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -68,7 +68,7 @@ function ContactSection({ darkMode }) {
                     </div>
                     <div>
                       <p
-                        className={`text-sm font-medium ${
+                        className={`text-xs sm:text-sm font-medium ${
                           darkMode ? "text-gray-400" : "text-gray-600"
                         }`}
                       >
@@ -76,7 +76,7 @@ function ContactSection({ darkMode }) {
                       </p>
                       <a
                         href="mailto:johndoe@example.com"
-                        className={`text-lg font-medium ${
+                        className={`text-base sm:text-lg font-medium ${
                           darkMode
                             ? "text-white hover:text-blue-400"
                             : "text-gray-900 hover:text-blue-600"
@@ -89,13 +89,13 @@ function ContactSection({ darkMode }) {
 
                   <div className="flex items-start">
                     <div
-                      className={`p-3 rounded-full mr-4 ${
+                      className={`p-2 sm:p-3 rounded-full mr-3 sm:mr-4 ${
                         darkMode ? "bg-gray-800" : "bg-blue-100"
                       }`}
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-blue-600"
+                        className="h-5 w-5 sm:h-6 sm:w-6 text-blue-600"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -110,7 +110,7 @@ function ContactSection({ darkMode }) {
                     </div>
                     <div>
                       <p
-                        className={`text-sm font-medium ${
+                        className={`text-xs sm:text-sm font-medium ${
                           darkMode ? "text-gray-400" : "text-gray-600"
                         }`}
                       >
@@ -118,7 +118,7 @@ function ContactSection({ darkMode }) {
                       </p>
                       <a
                         href="tel:+1234567890"
-                        className={`text-lg font-medium ${
+                        className={`text-base sm:text-lg font-medium ${
                           darkMode
                             ? "text-white hover:text-blue-400"
                             : "text-gray-900 hover:text-blue-600"
@@ -131,13 +131,13 @@ function ContactSection({ darkMode }) {
 
                   <div className="flex items-start">
                     <div
-                      className={`p-3 rounded-full mr-4 ${
+                      className={`p-2 sm:p-3 rounded-full mr-3 sm:mr-4 ${
                         darkMode ? "bg-gray-800" : "bg-blue-100"
                       }`}
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-blue-600"
+                        className="h-5 w-5 sm:h-6 sm:w-6 text-blue-600"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -158,14 +158,14 @@ function ContactSection({ darkMode }) {
                     </div>
                     <div>
                       <p
-                        className={`text-sm font-medium ${
+                        className={`text-xs sm:text-sm font-medium ${
                           darkMode ? "text-gray-400" : "text-gray-600"
                         }`}
                       >
                         Location
                       </p>
                       <p
-                        className={`text-lg font-medium ${
+                        className={`text-base sm:text-lg font-medium ${
                           darkMode ? "text-white" : "text-gray-900"
                         }`}
                       >
@@ -176,18 +176,18 @@ function ContactSection({ darkMode }) {
                 </div>
 
                 {/* Social Links */}
-                <div className="mt-8">
+                <div className="mt-6 sm:mt-8">
                   <p
-                    className={`font-medium mb-4 ${
+                    className={`text-sm sm:text-base font-medium mb-3 sm:mb-4 ${
                       darkMode ? "text-white" : "text-gray-900"
                     }`}
                   >
                     Follow Me
                   </p>
-                  <div className="flex space-x-4">
+                  <div className="flex space-x-3 sm:space-x-4">
                     <a
                       href="#"
-                      className={`p-3 rounded-full ${
+                      className={`p-2 sm:p-3 rounded-full ${
                         darkMode
                           ? "bg-gray-800 hover:bg-gray-700"
                           : "bg-gray-100 hover:bg-gray-200"
@@ -195,7 +195,7 @@ function ContactSection({ darkMode }) {
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 text-blue-600"
+                        className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                       >
@@ -204,7 +204,7 @@ function ContactSection({ darkMode }) {
                     </a>
                     <a
                       href="#"
-                      className={`p-3 rounded-full ${
+                      className={`p-2 sm:p-3 rounded-full ${
                         darkMode
                           ? "bg-gray-800 hover:bg-gray-700"
                           : "bg-gray-100 hover:bg-gray-200"
@@ -212,7 +212,7 @@ function ContactSection({ darkMode }) {
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 text-blue-600"
+                        className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                       >
@@ -221,7 +221,7 @@ function ContactSection({ darkMode }) {
                     </a>
                     <a
                       href="#"
-                      className={`p-3 rounded-full ${
+                      className={`p-2 sm:p-3 rounded-full ${
                         darkMode
                           ? "bg-gray-800 hover:bg-gray-700"
                           : "bg-gray-100 hover:bg-gray-200"
@@ -229,7 +229,7 @@ function ContactSection({ darkMode }) {
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 text-blue-600"
+                        className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                       >
@@ -238,7 +238,7 @@ function ContactSection({ darkMode }) {
                     </a>
                     <a
                       href="#"
-                      className={`p-3 rounded-full ${
+                      className={`p-2 sm:p-3 rounded-full ${
                         darkMode
                           ? "bg-gray-800 hover:bg-gray-700"
                           : "bg-gray-100 hover:bg-gray-200"
@@ -246,7 +246,7 @@ function ContactSection({ darkMode }) {
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 text-blue-600"
+                        className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                       >
@@ -259,14 +259,14 @@ function ContactSection({ darkMode }) {
             </div>
 
             {/* Contact Form */}
-            <div className="lg:w-3/5">
+            <div className="lg:w-3/5 mt-4 lg:mt-0">
               <div
-                className={`p-6 rounded-lg ${
+                className={`p-4 sm:p-6 rounded-lg ${
                   darkMode ? "bg-gray-900" : "bg-gray-50"
                 }`}
               >
                 <h3
-                  className={`text-2xl font-semibold mb-6 ${
+                  className={`text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 ${
                     darkMode ? "text-white" : "text-gray-900"
                   }`}
                 >
@@ -274,11 +274,11 @@ function ContactSection({ darkMode }) {
                 </h3>
 
                 <form>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
                     <div>
                       <label
                         htmlFor="name"
-                        className={`block text-sm font-medium mb-2 ${
+                        className={`block text-xs sm:text-sm font-medium mb-1 sm:mb-2 ${
                           darkMode ? "text-gray-300" : "text-gray-700"
                         }`}
                       >
@@ -287,7 +287,7 @@ function ContactSection({ darkMode }) {
                       <input
                         type="text"
                         id="name"
-                        className={`w-full px-4 py-3 rounded-lg ${
+                        className={`w-full px-3 sm:px-4 py-2 sm:py-3 text-sm rounded-lg ${
                           darkMode
                             ? "bg-gray-800 border-gray-700 text-white focus:border-blue-500"
                             : "bg-white border-gray-300 text-gray-900 focus:border-blue-500"
@@ -298,7 +298,7 @@ function ContactSection({ darkMode }) {
                     <div>
                       <label
                         htmlFor="email"
-                        className={`block text-sm font-medium mb-2 ${
+                        className={`block text-xs sm:text-sm font-medium mb-1 sm:mb-2 ${
                           darkMode ? "text-gray-300" : "text-gray-700"
                         }`}
                       >
@@ -307,7 +307,7 @@ function ContactSection({ darkMode }) {
                       <input
                         type="email"
                         id="email"
-                        className={`w-full px-4 py-3 rounded-lg ${
+                        className={`w-full px-3 sm:px-4 py-2 sm:py-3 text-sm rounded-lg ${
                           darkMode
                             ? "bg-gray-800 border-gray-700 text-white focus:border-blue-500"
                             : "bg-white border-gray-300 text-gray-900 focus:border-blue-500"
@@ -317,10 +317,10 @@ function ContactSection({ darkMode }) {
                     </div>
                   </div>
 
-                  <div className="mb-6">
+                  <div className="mb-4 sm:mb-6">
                     <label
                       htmlFor="subject"
-                      className={`block text-sm font-medium mb-2 ${
+                      className={`block text-xs sm:text-sm font-medium mb-1 sm:mb-2 ${
                         darkMode ? "text-gray-300" : "text-gray-700"
                       }`}
                     >
@@ -329,7 +329,7 @@ function ContactSection({ darkMode }) {
                     <input
                       type="text"
                       id="subject"
-                      className={`w-full px-4 py-3 rounded-lg ${
+                      className={`w-full px-3 sm:px-4 py-2 sm:py-3 text-sm rounded-lg ${
                         darkMode
                           ? "bg-gray-800 border-gray-700 text-white focus:border-blue-500"
                           : "bg-white border-gray-300 text-gray-900 focus:border-blue-500"
@@ -338,10 +338,10 @@ function ContactSection({ darkMode }) {
                     />
                   </div>
 
-                  <div className="mb-6">
+                  <div className="mb-4 sm:mb-6">
                     <label
                       htmlFor="message"
-                      className={`block text-sm font-medium mb-2 ${
+                      className={`block text-xs sm:text-sm font-medium mb-1 sm:mb-2 ${
                         darkMode ? "text-gray-300" : "text-gray-700"
                       }`}
                     >
@@ -349,8 +349,8 @@ function ContactSection({ darkMode }) {
                     </label>
                     <textarea
                       id="message"
-                      rows={6}
-                      className={`w-full px-4 py-3 rounded-lg ${
+                      rows={5}
+                      className={`w-full px-3 sm:px-4 py-2 sm:py-3 text-sm rounded-lg ${
                         darkMode
                           ? "bg-gray-800 border-gray-700 text-white focus:border-blue-500"
                           : "bg-white border-gray-300 text-gray-900 focus:border-blue-500"
@@ -361,12 +361,12 @@ function ContactSection({ darkMode }) {
 
                   <button
                     type="submit"
-                    className="w-full md:w-auto px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2"
+                    className="w-full md:w-auto px-6 sm:px-8 py-2 sm:py-3 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-1 sm:gap-2"
                   >
-                    Send Message
+                    <span>Send Message</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
+                      className="h-4 w-4 sm:h-5 sm:w-5"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
@@ -384,7 +384,7 @@ function ContactSection({ darkMode }) {
           </div>
 
           {/* Map */}
-          <div className="mt-12 rounded-lg overflow-hidden h-80 w-full">
+          <div className="mt-8 sm:mt-12 rounded-lg overflow-hidden h-56 sm:h-64 md:h-80 w-full">
             <div className="w-full h-full bg-gray-300 flex items-center justify-center">
               <div
                 className={`text-center ${
@@ -393,7 +393,7 @@ function ContactSection({ darkMode }) {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-16 w-16 mx-auto mb-4 opacity-60"
+                  className="h-12 w-12 sm:h-16 sm:w-16 mx-auto mb-3 sm:mb-4 opacity-60"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -405,8 +405,8 @@ function ContactSection({ darkMode }) {
                     d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
                   />
                 </svg>
-                <p className="text-lg font-medium">Interactive Map</p>
-                <p className="text-sm">(Map would be loaded here)</p>
+                <p className="text-base sm:text-lg font-medium">Interactive Map</p>
+                <p className="text-xs sm:text-sm">(Map would be loaded here)</p>
               </div>
             </div>
           </div>
