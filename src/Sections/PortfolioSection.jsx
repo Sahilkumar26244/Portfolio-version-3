@@ -13,42 +13,42 @@ function PortfolioSection({ darkMode }) {
     {
       title: "Modern Fashion Store",
       category: "E-commerce Website",
-      type: "ecommerce",
+      type: "Ecommerce",
       description: "A fully responsive e-commerce platform with product filtering, cart functionality, and secure checkout.",
       image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGZhc2hpb258ZW58MHx8MHx8fDA%3D"
     },
     {
       title: "Corporate Landing Page",
       category: "Static Website",
-      type: "static",
+      type: "Static",
       description: "Clean and professional static website for a financial services company with optimized performance.",
       image: "https://images.unsplash.com/photo-1584824486509-112e4181ff6b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGxhbmRpbmclMjBwYWdlfGVufDB8fDB8fHww"
     },
     {
       title: "Product Launch Countdown",
       category: "Interactive Website",
-      type: "interactive",
+      type: "Interactive",
       description: "Engaging single-page application featuring interactive elements and animated transitions.",
       image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D"
     },
     {
       title: "Portfolio Dashboard",
       category: "SPA Dashboard",
-      type: "dashboard",
+      type: "Dashboard",
       description: "Dynamic dashboard built with React featuring real-time data visualization and user authentication.",
       image: "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBvcnRmb2xpb3xlbnwwfHwwfHx8MA%3D%3D"
     },
     {
       title: "Recipe Finder App",
       category: "Web Application",
-      type: "application",
+      type: "Application",
       description: "Feature-rich web application with search functionality, user accounts, and responsive design.",
       image: "https://images.unsplash.com/photo-1514986888952-8cd320577b68?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGZvb2QlMjBraXRjaGVufGVufDB8fDB8fHww"
     },
     {
       title: "Travel Blog",
       category: "Blog Website",
-      type: "blog",
+      type: "Blog",
       description: "Content-focused blog with custom CMS integration, comment system, and SEO optimization.",
       image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dHJhdmVsfGVufDB8fDB8fHww"
     }
