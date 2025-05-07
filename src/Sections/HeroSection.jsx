@@ -23,7 +23,7 @@ function HeroSection({darkMode, scrollToSection}) {
             <div className={`md:w-1/2 mb-6 sm:mb-8 md:mb-0 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} transition-all duration-700 ease-out`}>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2 sm:mb-4">
                 <span className={`${darkMode ? 'text-white' : 'text-gray-900'} transition-colors duration-500`}>Hi, I'm </span>
-                <span className="text-blue-600 transition-colors duration-500">John Doe</span>
+                <span className="text-blue-600 transition-colors duration-500">Sahil kumar</span>
               </h1>
               <h2 className={`text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'} transition-all duration-700 delay-100 ease-out`}>
                 <span className={`${darkMode ? 'text-gray-300' : 'text-gray-700'} transition-colors duration-500`}>

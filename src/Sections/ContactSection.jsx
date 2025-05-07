@@ -82,7 +82,7 @@ function ContactSection({ darkMode }) {
                             : "text-gray-900 hover:text-blue-600"
                         }`}
                       >
-                        johndoe@example.com
+                        kumarsahil8981@gmail.com
                       </a>
                     </div>
                   </div>
@@ -124,7 +124,7 @@ function ContactSection({ darkMode }) {
                             : "text-gray-900 hover:text-blue-600"
                         }`}
                       >
-                        +1 (234) 567-890
+                        +91-7004190523
                       </a>
                     </div>
                   </div>
@@ -169,7 +169,7 @@ function ContactSection({ darkMode }) {
                           darkMode ? "text-white" : "text-gray-900"
                         }`}
                       >
-                        San Francisco, CA
+                        Gurgaon, Haryana, India
                       </p>
                     </div>
                   </div>
