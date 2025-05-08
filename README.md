@@ -113,9 +113,10 @@ portfolio-v3/
 
 ## 📷 Screenshots
 
-![Home Page](https://i.ibb.co/placeholder/home-screenshot.png)
-![Projects Section](https://i.ibb.co/placeholder/projects-screenshot.png)
-![Contact Section](https://i.ibb.co/placeholder/contact-screenshot.png)
+![AboutUs Section]![Screenshot 2025-05-08 174401](https://github.com/user-attachments/assets/4aa952a7-aafd-4a18-8676-942be8b3c704)
+![Projects Section]![Screenshot 2025-05-08 174526](https://github.com/user-attachments/assets/5c1a1757-0e10-4e60-af79-40611c3a07a8)
+![Contact Section]![Screenshot 2025-05-08 174545](https://github.com/user-attachments/assets/0599e9e1-b3d4-4d03-9234-348eb574fda6)
+
 
 ## 🔄 Continuous Improvement
 
